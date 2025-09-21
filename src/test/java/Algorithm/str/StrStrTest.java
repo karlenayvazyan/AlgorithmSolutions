@@ -42,4 +42,18 @@ public class StrStrTest {
         int i = str.strStr(haystack, needle);
         assertEquals(4, i);
     }
+
+    @Test
+    public void strStr_6() {
+        String haystack = "mississippi", needle = "issipi";
+        int i = str.strStr(haystack, needle);
+        assertEquals(-1, i);
+    }
+
+    @Test
+    public void strStr_7() {
+        String haystack = "mississippi", needle = "pi";
+        int i = str.strStr(haystack, needle);
+        assertEquals(9, i);
+    }
 }

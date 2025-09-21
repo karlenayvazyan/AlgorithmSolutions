@@ -2,17 +2,18 @@ package Algorithm.arr;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class MaxProfitTest {
+public class MaxProfit2Test {
 
-    private final MaxProfit maxProfit = new MaxProfit();
+    private final MaxProfit2 maxProfit = new MaxProfit2();
 
     @Test
     public void maxProfit_1() {
         int[] arr = {7, 1, 5, 3, 6, 4};
         int i = maxProfit.maxProfit(arr);
-        assertEquals(5, i);
+        assertEquals(7, i);
     }
 
     @Test
@@ -33,6 +34,6 @@ public class MaxProfitTest {
     public void maxProfit_4() {
         int[] arr = {6, 1, 3, 2, 4, 7};
         int i = maxProfit.maxProfit(arr);
-        assertEquals(6, i);
+        assertEquals(7, i);
     }
 }
